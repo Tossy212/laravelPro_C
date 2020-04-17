@@ -8,6 +8,15 @@
         <div class="col-6">
             <h1 class="mt-10">Daftar Mahasiswa Baru</h1>
 
+            <a href="/students/create" class="btn btn-primary my-3">Tambah Data</a>
+
+            @if (session('status'))
+            <div class="alert alert-success">
+            {{ session('status')}}
+            </div>
+            @endif
+
+
 
 
             <ul class="list-group">
